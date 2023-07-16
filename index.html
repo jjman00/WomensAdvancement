@@ -1,198 +1,64 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
-    <title>Visualizing Women’s Advancement</title>
+    <title>Women's Advancement</title>
     <style>
-    body {
-        font-family: Arial, sans-serif;
-        color: #003262; /* Berkeley Blue */
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-        display: flex;
-        background-color: #FFFFFF; /* White */
-    }
-    h1, h2 {
-        /*color: #FDB515; /* California Gold */
-      	color:#003262;
-    }
-    h1 {
-        text-align: center;
-        padding: 20px 0;
-    }
-    #content {
-        max-width: 1400px;
-        margin: 0 auto;
-        padding: 20px;
-        flex-grow: 1;
-        overflow: auto;
-    }
-    .highlight {
-        background-color: #FFFFFF; /* Medalist */
-    }
-    /* Add styles for the vertical navigation bar */
-    #navbar {
-        list-style: none;
-        padding: 20px;
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 200px;
-        background-color: #3B7EA1; /* Founders Rock */
-        overflow: auto;
-    }
-    #navbar li {
-        margin-bottom: 10px;
-    }
-    #navbar a {
-        text-decoration: none;
-        color: #FFFFFF; /* White */
-    }
-    #navbar .active {
-        font-weight: bold;
-        color: #EE1F60; /* Sather Gate */
-    }
-</style> </head>
+        /* Add your CSS here */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #003262; /* Berkeley Blue */
+            overflow: hidden;
+            position: sticky;
+            top: 0;
+            width: 100%;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #FDB515; /* California Gold */
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #FDB515; /* California Gold */
+            color: #003262; /* Berkeley Blue */
+        }
+        /* Add this to make your image responsive */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+  </head>
   <body>
-    <ul id="navbar">
-      <li><a href="#introduction">Introduction</a></li>
-      <li><a href="#objectives">Objectives and Challenges</a></li>
-      <li><a href="#indicators">Indicators</a></li>
-      <li><a href="#healthcare">Healthcare</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#marriage">Marriage</a></li>
-      <li><a href="#labor">Labor &amp; Finance</a></li>
-    </ul>
-    <div id="content">
-      <h1>Visualizing Women's Advancement: <br>
-        A Global View of Women's Educational, Financial, and Social Wellbeing</h1>
-      <p>By: Jose DelValle, Claudia Durkin, Lizzie Friend, Maria Manna, MaKenzie
-        Muller</p>
-      <p>W231 Summer 2023</p>
-      <h2 id="introduction">Introduction</h2>
-      <p>This project aims to visualize the advancement of women globally in
-        areas such as health, education, marriage, and labor &amp; finance. The
-        data used comes from The World Bank Gender Data Portal and U.S. Maternal
-        Education datasets. The primary users of this information are public
-        health leaders, policymakers, business investors, and the general
-        public.</p>
-      <h2 id="objectives">Objectives and Challenges</h2>
-      <p>The goal is to gain insights on gender differences in health,
-        education, marriage, and financial topics, globally and in the United
-        States. We acknowledge the potential issues of data inequity, with
-        missing data for lower-income countries and those with economic
-        instability due to war, famine, and lasting impacts of the Covid-19
-        pandemic.</p>
-      <h2 id="indicators">Indicators</h2>
-      <p>The four main categories of indicators include healthcare (maternal
-        ages and access to medical and prenatal care), education (years of
-        schooling), marriage (access and equality in partnerships), and labor
-        &amp; finance (access to financial resources and jobs).</p>
-      <h2 id="healthcare">Healthcare</h2>
-      <p>Findings suggest an increase in mothers' average age at childbirth, a
-        decrease in maternal deaths due to improved healthcare, and a reduction
-        in family size owing to the accessibility of contraceptives. However,
-        regions like Sub Saharan Africa and South Asia are still lagging behind
-        the rest of the world.</p>
-      <div class="tableauPlaceholder" id="viz1689527679360" style="position: relative"><noscript><a
-href="#"><img alt="Dash Adol " src="https://public.tableau.com/static/images/20/209_Project_Demo/DashAdol/1_rss.png"
-style="border: none"></a></noscript><object class="tableauViz" style="display:none;"><param
-            name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"> <param
-            name="embed_code_version" value="3"> <param name="site_root" value=""><param
-            name="name" value="209_Project_Demo/DashAdol"><param name="tabs" value="no"><param
-            name="toolbar" value="yes"><param name="static_image" value="https://public.tableau.com/static/images/20/209_Project_Demo/DashAdol/1.png">
-          <param name="animate_transition" value="yes"><param name="display_static_image"
-            value="yes"><param name="display_spinner" value="yes"><param name="display_overlay"
-            value="yes"><param name="display_count" value="yes"><param name="language"
-            value="en-US"><param name="filter" value="publish=yes"></object></div>
-      <script type="text/javascript">                    var divElement = document.getElementById('viz1689527679360');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1400px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1400px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='1027px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-      <p>Here's another visual that shows the number of maternal deaths
-        decreasing while access to healthcare increases. Focused on Sub Saharan
-        Africa and South Asia).</p>
-      <div class="tableauPlaceholder" id="viz1689527851316" style="position: relative"><noscript><a
-href="#"><img alt="Maternal Deaths and Access to Health CareAfrica & South Asia "
-src="https://public.tableau.com/static/images/20/209_Project_Combined/Combined/1_rss.png"
-style="border: none"></a></noscript><object class="tableauViz" style="display:none;"><param
-            name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"> <param
-            name="embed_code_version" value="3"> <param name="site_root" value=""><param
-            name="name" value="209_Project_Combined/Combined"><param name="tabs"
-            value="no"><param name="toolbar" value="yes"><param name="static_image"
-            value="https://public.tableau.com/static/images/20/209_Project_Combined/Combined/1.png">
-          <param name="animate_transition" value="yes"><param name="display_static_image"
-            value="yes"><param name="display_spinner" value="yes"><param name="display_overlay"
-            value="yes"><param name="display_count" value="yes"><param name="language"
-            value="en-US"><param name="filter" value="publish=yes"></object></div>
-      <script type="text/javascript">                    var divElement = document.getElementById('viz1689527851316');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-      <h2 id="education">Education</h2>
-      <p>The gap between female and male years of schooling has been closing
-        globally. In some regions, females have overtaken males. East Asia has
-        experienced the fastest increase in female years of schooling,
-        overtaking Europe. However, post-COVID-19, trends reversed in South
-        Asia. Females in Sub-Saharan Africa still lag males.</p>
-      <div class="tableauPlaceholder" id="viz1689535743000" style="position: relative"><noscript><a
-href="#"><img alt="Dashboard_Gap " src="https://public.tableau.com/static/images/Cl/Claudia_Education_Gap/Dashboard_Gap/1_rss.png"
-style="border: none"></a></noscript><object class="tableauViz" style="display:none;"><param
-            name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"> <param
-            name="embed_code_version" value="3"> <param name="site_root" value=""><param
-            name="name" value="Claudia_Education_Gap/Dashboard_Gap"><param name="tabs"
-            value="no"><param name="toolbar" value="yes"><param name="static_image"
-            value="https://public.tableau.com/static/images/Cl/Claudia_Education_Gap/Dashboard_Gap/1.png">
-          <param name="animate_transition" value="yes"><param name="display_static_image"
-            value="yes"><param name="display_spinner" value="yes"><param name="display_overlay"
-            value="yes"><param name="display_count" value="yes"><param name="language"
-            value="en-US"></object></div>
-      <script type="text/javascript">                    var divElement = document.getElementById('viz1689535743000');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1400px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1400px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='877px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-      <p>Here's another visual that shows more.</p>
-      <div class="tableauPlaceholder" id="viz1689535420694" style="position: relative"><noscript><a
-href="#"><img alt="Dashboard_Literacy " src="https://public.tableau.com/static/images/Cl/Claudia_Education_Literacy/Dashboard_Literacy/1_rss.png"
-style="border: none"></a></noscript><object class="tableauViz" style="display:none;"><param
-            name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"> <param
-            name="embed_code_version" value="3"> <param name="site_root" value=""><param
-            name="name" value="Claudia_Education_Literacy/Dashboard_Literacy"><param
-            name="tabs" value="no"><param name="toolbar" value="yes"><param name="static_image"
-            value="https://public.tableau.com/static/images/Cl/Claudia_Education_Literacy/Dashboard_Literacy/1.png">
-          <param name="animate_transition" value="yes"><param name="display_static_image"
-            value="yes"><param name="display_spinner" value="yes"><param name="display_overlay"
-            value="yes"><param name="display_count" value="yes"><param name="language"
-            value="en-US"></object></div>
-      <script type="text/javascript">                    var divElement = document.getElementById('viz1689535420694');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1400px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1400px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='827px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-      <h2 id="marriage">Marriage<br>
-      </h2>
-      <p>Rates of access to bank accounts for women have increased over time but
-        are still lower than those for men. The improvement in women's rates
-        relative to men's was less than expected.</p>
-      <div class="tableauPlaceholder" id="viz1689536020893" style="position: relative"><noscript><a
-href="#"><img alt="Dashboard 4 " src="https://public.tableau.com/static/images/Ma/MarriageIndicatorScoreDashboard/Dashboard4/1_rss.png"
-style="border: none"></a></noscript><object class="tableauViz" style="display:none;"><param
-            name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"> <param
-            name="embed_code_version" value="3"> <param name="site_root" value=""><param
-            name="name" value="MarriageIndicatorScoreDashboard/Dashboard4"><param
-            name="tabs" value="no"><param name="toolbar" value="yes"><param name="static_image"
-            value="https://public.tableau.com/static/images/Ma/MarriageIndicatorScoreDashboard/Dashboard4/1.png">
-          <param name="animate_transition" value="yes"><param name="display_static_image"
-            value="yes"><param name="display_spinner" value="yes"><param name="display_overlay"
-            value="yes"><param name="display_count" value="yes"><param name="language"
-            value="en-US"></object></div>
-      <script type="text/javascript">                    var divElement = document.getElementById('viz1689536020893');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1400px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1400px';vizElement.style.height='827px';} else { vizElement.style.width='1400px';vizElement.style.height='827px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-      <p>Here's another marriage visual. </p>
-      <div class="tableauPlaceholder" id="viz1689536210282" style="position: relative"><noscript><a
-href="#"><img alt="Dashboard 3 (2) " src="https://public.tableau.com/static/images/QK/QKHFPRZ98/1_rss.png"
-style="border: none"></a></noscript><object class="tableauViz" style="display:none;"><param
-            name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"> <param
-            name="embed_code_version" value="3"> <param name="path" value="shared/QKHFPRZ98">
-          <param name="toolbar" value="yes"><param name="static_image" value="https://public.tableau.com/static/images/QK/QKHFPRZ98/1.png">
-          <param name="animate_transition" value="yes"><param name="display_static_image"
-            value="yes"><param name="display_spinner" value="yes"><param name="display_overlay"
-            value="yes"><param name="display_count" value="yes"><param name="language"
-            value="en-US"></object></div>
-      <script type="text/javascript">                    var divElement = document.getElementById('viz1689536210282');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1400px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1400px';vizElement.style.height='827px';} else { vizElement.style.width='1400px';vizElement.style.height='827px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-      <h2 id="labor"> </h2>
-      <h2>Labor &amp; Finance</h2>
-      <p>Rates of access to bank accounts for women have increased over time but
-        are still lower than those for men. The improvement in women's rates
-        relative to men's was less than expected.</p>
-      <!-- Placeholder for Labor & Finance visualization --> </div>
+    <div class="navbar"> <a href="index.html">Women's Advancement</a> <a href="aboutus.html">About
+        Us</a> <a href="healthcare.html">Healthcare</a> <a href="education.html">Education</a>
+      <a href="marriage.html">Marriage</a> <a href="labor.html">Labor and
+        Finance</a> </div>
+    <h1 style="text-align: center;">&nbsp; Visualizing Women's Advancement</h1>
+    <h1 style="text-align: center;">A Global View of Women's Educational,
+      Financial, and Social Wellbeing</h1>
+    <p><br>
+    </p>
+    <p>By: Jose DelValle, Claudia Durkin, Lizzie Friend, Maria Manna, MaKenzie
+      Muller <br>
+    </p>
+    <h2 id="introduction">Introduction</h2>
+    <p>This project aims to visualize the advancement of women globally in areas
+      such as health, education, marriage, and labor &amp; finance. The data
+      used comes from The World Bank Gender Data Portal and U.S. Maternal
+      Education datasets. The primary users of this information are public
+      health leaders, policymakers, business investors, and the general public.</p>
+    <h2 id="objectives">Objectives and Challenges</h2>
+    <p>The goal is to gain insights on gender differences in health, education,
+      marriage, and financial topics, globally and in the United States. We
+      acknowledge the potential issues of data inequity, with missing data for
+      lower-income countries and those with economic instability due to war,
+      famine, and lasting impacts of the Covid-19 pandemic.</p>
+    <img src="file:///C:/Users/jjman/Desktop/209/Final%20Project/website/Picture1.png"
+      alt="" title="Women's Advancement">
   </body>
 </html>
